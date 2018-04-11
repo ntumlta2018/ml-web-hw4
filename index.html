@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115414898-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115414898-1');
+  </script>
+</head>
+
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="author" content="yangchris11" >
+<meta charset="UTF-8">
+
+
+<title>Machine Learning (2018, Spring) - HW4</title>
+
+<xmp theme="united" style="display:none;">
+
+
+
+# <p class="text-h">Homework 4 - Unsupervised learning & dimension reduction</p>
+
+### <p class="text-hh">Announcements</p>
+
+
+#### 4/12
+
+* HW4 release!
+
+
+
+<hr>
+
+
+### <p class="text-hh">Lecture Slides</p>
+
+
+
+
+<hr>
+
+
+### <p class="text-hh">Links</p>
+* 作業投影片 <a href="https://docs.google.com/presentation/d/1XvCZqgLx71HjrL9cRBZp-dxqY5gruIA7EBK1Td3bl0U/edit?usp=sharing" target="_blank"><i class="fa fa-book"></i></a>
+* Kaggle 連結 <a href="https://goo.gl/CJxCLv" target="_blank"><i class="fa fa-trophy"></i></a>
+* Github Tutorial 投影片 <a href="https://docs.google.com/presentation/d/1IdhaxwbQ-O3Gz7kW57_VKQDVM27CNk0jtP8fNkhQduo/edit?usp=sharing" target="_blank"><i class="fa fa-book"></i></a>
+* Github Repo 表單 <a href="https://goo.gl/forms/4TTE24hLviFXaCqz2" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
+* Report 模板 <a href="https://docs.google.com/document/d/1vy8FhZPThNcaRlm6jRKq8NMl6-ElFMW-oJjbtBSV6MM/edit?usp=sharing" target="_blank"><i class="fa fa-file-text"></i></a>
+* 小老師表單 <a href="https://goo.gl/feHp6o" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
+* (未開放)遲交表單 <a href="" target="_blank"><i class="fa fa-clock-o"></i></a>
+* Facebook Group <a href="https://www.facebook.com/groups/358842527926029/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+
+
+<hr>
+
+
+### <p class="text-hh">Deadlines</p>
+* Simple Bonus Deadline: 4/18/2018 23:59:59 (GMT+8)
+* Kaggle Deadline: 4/25/2018 23:59:59 (GMT+8)
+* Github Deadline: 4/26/2018 23:59:59 (GMT+8)
+
+<hr>
+
+### <p class="text-hh">Assignment Regulation</p>
+
+* ALL code must be written in python3.5+ 
+* For `hw4.sh` :
+  * ALL python standard library is prohibited (e.g. sys, csv, time)
+  * numpy == 1.13
+  * scipy == 0.19
+  * pandas == 0.21
+
+* For `hw4_best.sh` :
+  * ALL toolkit is prohibited (however with some version limitation)
+  * Tensorflow == 1.4.0
+  * Pytorch == 0.3.0
+  * Keras == 2.0.8
+  * Scikit-learn == 0.19.0
+<hr>
+
+### <p class="text-hh">FAQ</p>
+
+
+
+<p>Q1：請問kaggle的組隊人數上限？</p>
+<p>A1：hw1為個人作業，不用在kaggle上進行組隊。</p>
+<p>Q2: 如果只有實作 gradient descent，hw1.sh跟hw1_best.sh可以繳交同一份script嗎？</p>
+<p>A2: 可以的。</p>
+<p>Q3: 請問report第一題到底要我們比較哪兩個模型？</p>
+<p>A3：簡單來說是比較以下兩種模型：</p>
+<ul>
+  <li>9x18+1=163種feature（9小時內所有18種測量值+bias項）</li>
+  <li>9x1+1=10種feature（9小時內所有PM2.5值+bias項）</li>
+</ul>
+<p>Q4：所以hw1_best.sh可能會用到的套件也要寫信跟助教確認嗎？</p>
+<p>A4：不用！只有hw1.sh中若會使用到numpy, scipy, pandas以外的套件才需要寫信。</p>
+<p>Q5：hw1.sh 可以 impart sys 嗎？</p>
+<p>A5：sys 屬於 python standard library，所以是可以使用的。其他可以使用的內建套間可以參照：<a href="https://docs.python.org/3/library/index.html">python stanard library</a>。</p>
+
+
+<hr>
+
+</xmp>
+<script src="strapdown.js"></script> 
+
+
+
+<footer>
+  <center><i class="fa fa-github"></i></a> Posted by: <a href="https://github.com/ycts/" target="_blank">Yen Ching Tseng</a>.</center>
+  <center><i class="fa fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2018@gmail.com </a>.</center>
+  <center><i class="fa fa-mortar-board"></i> Course website: <a href="http://163.28.17.129/mlcourse/#", target="_blank">Machine Learning (2018, Spring) @ National Taiwan University</a>.</center>
+  <center><i class="fa fa-cc"></i> Based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>. Web fonts from <a href="https://fonts.google.com" target="_blank">Google</a>.</center>
+</footer>
+
+</html>
