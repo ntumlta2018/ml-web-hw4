@@ -63,26 +63,51 @@
 
 ### <p class="text-hh">Deadlines</p>
 * Simple Bonus Deadline: 4/18/2018 23:59:59 (GMT+8)
-* Kaggle Deadline: 4/25/2018 23:59:59 (GMT+8)
-* Github Deadline: 4/26/2018 23:59:59 (GMT+8)
+* Kaggle Deadline: 5/02/2018 23:59:59 (GMT+8)
+* Github Deadline: 5/03/2018 23:59:59 (GMT+8)
 
 <hr>
 
-### <p class="text-hh">Assignment Regulation</p>
+### <p class="text-hh">Report</p>
+#### <p class="text-hh">Part A: PCA of colored faces</p>
 
-* ALL code must be written in python3.5+ 
-* For `hw4.sh` :
-  * ALL python standard library is prohibited (e.g. sys, csv, time)
-  * numpy == 1.13
-  * scipy == 0.19
-  * pandas == 0.21
+* 作業要求：
+  * (.5%) 請畫出所有臉的平均。
+  * (.5%) 請畫出前四個 Eigenfaces，也就是對應到前四大 Eigenvalues 的 Eigenvectors。
+  * (.5%) 請從數據集中挑出任意四個圖片，並用前四大 Eigenfaces 進行 reconstruction，並畫出結果。
+  * (.5%) 請寫出前四大 Eigenfaces 各自所佔的比重 (explained variance ratio)，請四捨五入到小數點後一位。
 
-* For `hw4_best.sh` :
-  * ALL toolkit is prohibited (however with some version limitation)
-  * Tensorflow == 1.4.0
-  * Pytorch == 0.3.0
-  * Keras == 2.0.8
-  * Scikit-learn == 0.19.0
+#### <p class="text-hh">Part B:Image clustering</p>
+
+* 作業要求: 
+  * (.5%) 請比較至少兩種不同的 feature extraction 及其結果。
+  * (.5%) 預測 visualization.npy 中的 label，在二維平面上視覺化 label 的分佈。
+  * (.5%) visualization.npy 中前 5000 個 images 來自 dataset A，後 5000 個 images 來自 dataset B。請根據這個資訊，在二維平面上視覺化 label 的分佈，接著比較和自己預測的 label 之間有何不同。
+  * (visualization.npy 將在 Kaggle deadline 之後公布在 Kaggle 上)
+
+  #### <p class="text-hh">Part C  : TBA</p>
+
+### <p class="text-hh">Rules</p>
+
+* Basic : No extra dataset. No plagiarism.
+* Allowed toolkits for "PCA of colored faces":
+  * NumPy 1.13+
+  * scikit-image 0.13+
+* Allowed toolkits for "Image clustering":
+  * python 3.5+
+  * tensorflow 1.3
+  * keras 2.0.8
+  * pytorch 0.2.0
+  * scikit-image 0.13+
+  * pillow 4.3.0
+  * scikit-learn 0.19+
+  * pandas 0.20+
+  * numpy
+  * scipy
+  * matplotlib
+  * h5py
+  * Python Standard Lib
+
 <hr>
 
 ### <p class="text-hh">FAQ</p>
