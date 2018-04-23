@@ -129,6 +129,66 @@
 
 ### <p class="text-hh">FAQ</p>
 
+#### <p class="text-hh">hw4</p>
+
+Q1: 可以用 python standard library ㄇ?  
+A1: 可以，所有作業都可以用，只要在這上面都可以: https://docs.python.org/3/library/
+
+Q2: 這次report有頁數限制ㄇ?  
+A2: 沒有，但是可以盡量控制在三頁以內，除此之外，圖片的解析度務必注意，在轉成pdf的時候可以把畫質調成最佳之類的。
+
+Q3: 這次作業如果一個part reproduce不出來就是扣整份的分數ㄇ?  
+A3: 由於這次作業比較特別，如果PCA跑不出來，那就拿不到report中PCA題目的分數；而如果image klustering跑不出來，則會拿不到kaggle/report中image klustering題目的分數。
+
+Q4: 我很擔心我花三個禮拜寫的code因為怪地方慘掉，有什麼方法可以檢查ㄇ?  
+A4: 這邊可以提供幾個方法：
+
+* 跟另外一位同學交換執行code，一路從檢查kaggle名稱/github下載/檢查資料夾路徑到執行script等等。
+* 執行助教的版本檢查scirpt（這週末會realease，僅供參考用）
+* 佛系programmer，不檢查，不看規則，不版本控制，deadline一到自然會reproduce出來。
+
+#### <p class="text-hh">part I : PCA</p>
+
+Q1: 在算mean face的時候影像的RGB值會產生小數點，但是儲存時只能存整數，所以要無條件捨去是嗎？  
+A1: 沒錯要存整數，可以加上 .astype(np.uint8)。  
+
+Q2: 想請問助教 在做PCA的時候若遇到covariance matrix太大導致記憶體爆炸的情況是怎麼做處理的呢？  
+A2: 請使用 full_matrices=false。  
+
+Q3: 我已經調成 full_matrices=false 卻還是跑不動，請問大概需要多少RAM呢？  
+A3: 根據助教這邊經驗大概需要10G左右。  
+
+Q4: 如果在自己的電腦上執行 reconstruct 會超過三分鐘該怎辦呢？  
+A4: 請不用擔心助教這邊會用工作站幫大家跑，只要記得用full_matrices=false應該都不會超過限定的時間。  
+
+Q5: 請問投影片上給的那張第10張eigenface是有用eigenvalue排序由大到小的順序嗎？  
+A5: 是的，正好是第十個eigenface。  
+
+Q6: 第k個eigenface會有唯一解嗎？為什麼我做出來跟其他人或者助教的都差一個負號?  
+A6: 嚴格來說，會有兩種解，兩種之間差負號，Report上放任一種都可以。  
+
+Q7: eigenfaces各自所佔的比重，如果四捨五入到小數點後一位，就全部都是0了？  
+A7: 先用百分比表示，然後四捨五入到小數後一位。  
+
+#### <p class="text-hh">part III : Ensemble Learning</p>
+
+Q1: 這題要上傳code嗎？  
+A1: 要，格式為ML2018SPRING/hw4/ensemble.py。  
+
+Q2: 這題要上傳script嗎?  
+A2: 不用。  
+
+Q3: 這題要上傳model嗎?有限制model數量嗎？
+A3: 不用。
+
+
+
+
+
+
+
+
+
 
 
 <hr>
